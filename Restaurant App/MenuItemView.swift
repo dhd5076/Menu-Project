@@ -16,21 +16,37 @@ struct MenuItemView: View {
     
     var body: some View {
         VStack(spacing: 12) {
-            URLImage(URL(string: "https://via.placeholder.com/350x200")!) { proxy in
-                proxy.image
-                    .resizable()
-            }
+            ZStack {
+                URLImage(URL(string: menuItem.itemPicture)!) { proxy in
+                    proxy.image
+                        .resizable()
+                        .blur(radius: 100)
+                }
+                .frame(maxWidth: .infinity, maxHeight: 200)
+                URLImage(URL(string: menuItem.itemPicture)!) { proxy in
+                    proxy.image
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .overlay(Circle().stroke(Color.black, lineWidth: 1))
+                }
                 .frame(maxHeight: 200)
+                .cornerRadius(360)
+            }
+            HStack {
+                Text(self.menuItem.itemName)
+            }
+            .padding(.bottom, 24)
             HStack {
                 Text("$\(String(format: "%.2f", self.menuItem.itemCost))")
                     .font(.headline)
                 Spacer()
             }
-            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+            Text(self.menuItem.itemDescription)
                 .frame(maxWidth: .infinity, alignment: .leading)
             Spacer()
             Button(action: {
-                self.order.orderItems.append(MenuItem(itemPicture: self.menuItem.itemPicture, itemName: self.menuItem.itemName, itemCost: self.menuItem.itemCost))
+                self.order.orderItems.append(self.menuItem)
+                self.order.orderTotal += self.menuItem.itemCost
             }) {
                 Text("Add To Order")
                     .font(.title)
@@ -39,7 +55,7 @@ struct MenuItemView: View {
             .frame(maxWidth: .infinity)
             .accentColor(Color.white)
             .background(Color.blue)
-            .cornerRadius(1280)
+            .cornerRadius(180)
         }
         .padding(12)
         .navigationBarTitle(self.menuItem.itemName)
@@ -49,7 +65,12 @@ struct MenuItemView: View {
 struct MenuItemView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            MenuItemView(menuItem: MenuItem(itemPicture: "P", itemName: "Example Item", itemCost: 1.99))
+            MenuItemView(menuItem: MenuItem(
+                itemPicture: "https://photos.bigoven.com/recipe/hero/spinach-grape-tomato-cheddar-f-e9717c.jpg?h=500&w=500",
+                itemName: "Example Item",
+                itemCost: 1.99,
+                itemDescription: "Example Description"))
         }
+        .environment(\.colorScheme, .dark)
     }
 }

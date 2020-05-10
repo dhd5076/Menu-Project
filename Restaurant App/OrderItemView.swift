@@ -7,22 +7,30 @@
 //
 
 import SwiftUI
+import URLImage
 
 struct OrderItemView: View {
-    @State public var itemPicture : String
-    @State public var itemName : String
+    @State public var menuItem : MenuItem
     
     var body: some View {
         HStack {
-            Text(itemPicture)
-            .frame(width: 64, height: 64)
-            Text(itemName)
+            HStack {
+                URLImage(URL(string: menuItem.itemPicture)!) { proxy in
+                    proxy.image
+                        .resizable()
+                }
+                .frame(width: 64, height: 64)
+                .cornerRadius(12)
+                Text(self.menuItem.itemName)
+            }
+            Spacer()
+            Text("$\(String(format: "%.2f", self.menuItem.itemCost))")
         }
     }
 }
 
 struct OrderItemView_Previews: PreviewProvider {
     static var previews: some View {
-        OrderItemView(itemPicture: "0", itemName: "0")
+        OrderItemView(menuItem: MenuItem(itemPicture: "Item", itemName: "Example Item", itemCost: 1.99, itemDescription: "Example Description"))
     }
 }

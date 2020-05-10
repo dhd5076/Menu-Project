@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import URLImage
 
 struct MenuItemListView: View {
     @State public var menuItem : MenuItem
@@ -14,8 +15,12 @@ struct MenuItemListView: View {
     var body: some View {
         NavigationLink(destination: MenuItemView(menuItem: menuItem)) {
             HStack {
-                Text(self.menuItem.itemPicture)
+                URLImage(URL(string: menuItem.itemPicture)!) { proxy in
+                    proxy.image
+                        .resizable()
+                }
                 .frame(width: 64, height: 64)
+                .cornerRadius(12)
                 Text(self.menuItem.itemName)
             }
         }
@@ -26,7 +31,11 @@ struct ListItemView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             List {
-                MenuItemListView(menuItem: MenuItem(itemPicture: "P", itemName: "Example Item", itemCost: 1.99))
+                MenuItemListView(menuItem: MenuItem(
+                    itemPicture: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/1599px-Good_Food_Display_-_NCI_Visuals_Online.jpg",
+                    itemName: "Example Item",
+                    itemCost: 1.99,
+                    itemDescription: "Example Description"))
             }
         }
     }

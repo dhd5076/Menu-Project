@@ -11,9 +11,28 @@ import SwiftUI
 struct BeveragesView: View {
     var body: some View {
         List {
-            MenuItemListView(menuItem: MenuItem(itemPicture: "📗 ", itemName: "French Toast", itemCost: 4.99))
+            MenuItemListView(menuItem: MenuItem(
+                itemPicture: "https://photos.bigoven.com/recipe/hero/black-ice-tea-lemon-2319753.jpg?h=500&w=500",
+                itemName: "Black Ice Tea",
+                itemCost: 4.99,
+                itemDescription: "Refreshing Black Ice Tea. 16oz"))
+            MenuItemListView(menuItem: MenuItem(
+                itemPicture: "https://photos.bigoven.com/recipe/hero/fresh-lemonade-2.jpg?h=500&w=500",
+                itemName: "Lemonade",
+                itemCost: 4.99,
+                itemDescription: "Thirst Quenching Fresh Squeezed Lemonade. 16oz"))
+            MenuItemListView(menuItem: MenuItem(
+                itemPicture: "https://b3h2.scene7.com/is/image/BedBathandBeyond/370309114881956p?$imagePLP$&wid=256&hei=256",
+                itemName: "Water",
+                itemCost: 4.99,
+                itemDescription: "Filtered Water, 16oz"))
+            MenuItemListView(menuItem: MenuItem(
+                itemPicture: "https://cdn11.bigcommerce.com/s-t4yqg98af9/images/stencil/640w/products/400628/5145945/apixkyd2f__25650.1535045062.jpg?c=2&imbypass=on",
+                itemName: "Coca Cola",
+                itemCost: 4.99,
+                itemDescription: "Coca Cola, 12oz Can"))
         }
-        .navigationBarTitle("Breakfast")
+        .navigationBarTitle("Beverages")
     }
 }
 

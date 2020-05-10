@@ -27,7 +27,7 @@
 		9ADFA2402465229F00AD4ED7 /* SidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFA23F2465229F00AD4ED7 /* SidesView.swift */; };
 		9ADFA242246522AA00AD4ED7 /* DessertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFA241246522AA00AD4ED7 /* DessertsView.swift */; };
 		9ADFA244246522B400AD4ED7 /* BeveragesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFA243246522B400AD4ED7 /* BeveragesView.swift */; };
-		9ADFA2462465232C00AD4ED7 /* KidsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFA2452465232C00AD4ED7 /* KidsView.swift */; };
+		9ADFA2462465232C00AD4ED7 /* SaladsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFA2452465232C00AD4ED7 /* SaladsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +52,7 @@
 		9ADFA23F2465229F00AD4ED7 /* SidesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidesView.swift; sourceTree = "<group>"; };
 		9ADFA241246522AA00AD4ED7 /* DessertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertsView.swift; sourceTree = "<group>"; };
 		9ADFA243246522B400AD4ED7 /* BeveragesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeveragesView.swift; sourceTree = "<group>"; };
-		9ADFA2452465232C00AD4ED7 /* KidsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsView.swift; sourceTree = "<group>"; };
+		9ADFA2452465232C00AD4ED7 /* SaladsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaladsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +117,8 @@
 				9AD88F4F2464FE2600FCA152 /* MenuItemView.swift */,
 				9AD88F4D2464FC7000FCA152 /* BreakfastView.swift */,
 				9AD88F562465049E00FCA152 /* EntreesView.swift */,
+				9ADFA2452465232C00AD4ED7 /* SaladsView.swift */,
 				9ADFA23F2465229F00AD4ED7 /* SidesView.swift */,
-				9ADFA2452465232C00AD4ED7 /* KidsView.swift */,
 				9ADFA243246522B400AD4ED7 /* BeveragesView.swift */,
 				9ADFA241246522AA00AD4ED7 /* DessertsView.swift */,
 			);
@@ -224,7 +224,7 @@
 				9AD88F592465056000FCA152 /* MenuItemListView.swift in Sources */,
 				9AD88F3A2464F90E00FCA152 /* ContentView.swift in Sources */,
 				9AD88F4E2464FC7000FCA152 /* BreakfastView.swift in Sources */,
-				9ADFA2462465232C00AD4ED7 /* KidsView.swift in Sources */,
+				9ADFA2462465232C00AD4ED7 /* SaladsView.swift in Sources */,
 				9AD88F572465049E00FCA152 /* EntreesView.swift in Sources */,
 				9ADFA244246522B400AD4ED7 /* BeveragesView.swift in Sources */,
 				9AD88F352464F90E00FCA152 /* SceneDelegate.swift in Sources */,

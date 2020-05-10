@@ -7,19 +7,40 @@
 //
 
 import SwiftUI
+import URLImage
 
 struct MenuView: View {
     var body: some View {
         NavigationView {
-            List {
-                MenuCategoryView(categoryPicture: "B", categoryName: "Breakfast", destination: BreakfastView())
-                MenuCategoryView(categoryPicture: "E", categoryName: "Entrées", destination: EntreesView())
-                MenuCategoryView(categoryPicture: "S", categoryName: "Sides", destination: SidesView())
-                MenuCategoryView(categoryPicture: "K", categoryName: "Kids", destination: KidsView())
-                MenuCategoryView(categoryPicture: "B", categoryName: "Beverages", destination: BeveragesView())
-                MenuCategoryView(categoryPicture: "D", categoryName: "Desserts", destination: DessertsView())
+            VStack(spacing: 12) {
+                List {
+                    MenuCategoryView(
+                        categoryPicture: "https://photos.bigoven.com/recipe/hero/mediterranean-breakfast-burrit-6afebb.jpg?h=500&w=500",
+                        categoryName: "Breakfast",
+                        destination: BreakfastView())
+                    MenuCategoryView(
+                        categoryPicture: "https://photos.bigoven.com/recipe/hero/tasty-cheeseburger-dinner.jpg?h=500&w=500",
+                        categoryName: "Entrées",
+                        destination: EntreesView())
+                    MenuCategoryView(
+                        categoryPicture: "https://www.readyseteat.com/sites/g/files/qyyrlu501/files/uploadedImages/img_2282_1550.JPEG",
+                        categoryName: "Salads",
+                        destination: SaladsView())
+                    MenuCategoryView(
+                        categoryPicture: "https://pbs.twimg.com/profile_images/3517216662/c95464a02012cb9c5f0df5a560210d57_400x400.jpeg",
+                        categoryName: "Sides",
+                        destination: SidesView())
+                    MenuCategoryView(
+                        categoryPicture: "https://photos.bigoven.com/recipe/hero/fresh-squeezed-lemonade.jpg?h=500&w=500",
+                        categoryName: "Beverages",
+                        destination: BeveragesView())
+                    MenuCategoryView(
+                        categoryPicture: "https://mealplannerpro.com/images/recipes/4/761874_256x256.jpg",
+                        categoryName: "Desserts",
+                        destination: DessertsView())
+                }
+                .navigationBarTitle("Menu")
             }
-            .navigationBarTitle("Menu")
         }
     }
 }
@@ -32,8 +53,12 @@ struct MenuCategoryView<Content : View >: View {
     var body : some View {
         NavigationLink(destination: destination) {
             HStack {
-                Text(self.categoryPicture)
+                URLImage(URL(string: categoryPicture)!) { proxy in
+                    proxy.image
+                        .resizable()
+                }
                 .frame(width: 64, height: 64)
+                .cornerRadius(12)
                 Text(self.categoryName)
             }
         }

@@ -10,4 +10,5 @@ import SwiftUI
 
 class Order: ObservableObject {
     @Published public var orderItems : [MenuItem] = []
+    @Published public var orderTotal : Float = 0.00
 }

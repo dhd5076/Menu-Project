@@ -28,11 +28,16 @@ struct ContentView: View {
                 }
                 .tag(1)
         }
+        .background(Color.black)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView().environment(\.colorScheme, .dark)
+            
+            ContentView().environment(\.colorScheme, .light)
+        }
     }
 }
