@@ -14,24 +14,28 @@ struct EntreesView: View {
             MenuItemListView(menuItem: MenuItem(
                 itemPicture: "https://i.pinimg.com/474x/f9/d8/31/f9d8312ded6f98a442df6b14376b329f--healthy-sandwiches-grilled-cheese-sandwiches.jpg",
                 itemName: "Turkey Panini",
-                itemCost: 4.99,
-                itemDescription: "House made foccacia filled with turkey, bacon, and tomatoes"))
+                itemCost: 6.99,
+                itemDescription: "House made foccacia filled with turkey, bacon, and tomatoes",
+                isHighlighted: false))
             MenuItemListView(menuItem: MenuItem(
                 itemPicture:
                 "https://i.pinimg.com/474x/1f/ee/60/1fee603ac70d05e65b02f3873cf0c747--easy-french-onion-soup-classic-french-onion-soup.jpg",
                 itemName: "French Onion Soup",
                 itemCost: 4.99,
-                itemDescription: "Perfect on a chilly day; Hot, savory, and satisfying"))
+                itemDescription: "Perfect on a chilly day; Hot, savory, and satisfying",
+                isHighlighted: false))
             MenuItemListView(menuItem: MenuItem(
                 itemPicture: "https://photos.bigoven.com/recipe/hero/tasty-cheeseburger-dinner.jpg?h=500&w=500",
                 itemName: "Cheeseburger",
-                itemCost: 4.99,
-                itemDescription: "Juicy, savory burgers topped with cheese, onions, and tomatoes"))
+                itemCost: 5.99,
+                itemDescription: "Juicy, savory burgers topped with cheese, onions, and tomatoes",
+                isHighlighted: true))
             MenuItemListView(menuItem: MenuItem(
                 itemPicture: "https://photos.bigoven.com/recipe/hero/pesto-pasta.jpg?h=500&w=500",
                 itemName: "Fresh Basil and Pesto Pasta",
-                itemCost: 4.99,
-                itemDescription: "Fresh, bright, and rich pesto atop delicate pasta"))
+                itemCost: 5.99,
+                itemDescription: "Fresh, bright, and rich pesto atop delicate pasta",
+                isHighlighted: false))
         }
         .navigationBarTitle("Entrées")
     }

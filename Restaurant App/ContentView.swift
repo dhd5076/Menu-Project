@@ -21,14 +21,20 @@ struct ContentView: View {
                 }
                 .tag(0)
             OrderView()
+            .font(.title)
+            .tabItem {
+                Image(systemName: "bag")
+                Text("Order")
+            }
+            .tag(1)
+            InfoView()
                 .font(.title)
                 .tabItem {
-                    Image(systemName: "bag")
-                    Text("Order")
+                    Image(systemName: "info.circle")
+                    Text("Info")
                 }
-                .tag(1)
+                .tag(2)
         }
-        .background(Color.black)
     }
 }
 

@@ -34,6 +34,12 @@ struct MenuItemView: View {
             }
             HStack {
                 Text(self.menuItem.itemName)
+                if(self.menuItem.isHighlighted) {
+                    Image(systemName: "star.fill")
+                        .resizable()
+                        .foregroundColor(.yellow)
+                        .frame(width: 16, height: 16)
+                }
             }
             .padding(.bottom, 24)
             HStack {
@@ -42,6 +48,7 @@ struct MenuItemView: View {
                 Spacer()
             }
             Text(self.menuItem.itemDescription)
+                .font(.headline)
                 .frame(maxWidth: .infinity, alignment: .leading)
             Spacer()
             Button(action: {
@@ -50,16 +57,17 @@ struct MenuItemView: View {
             }) {
                 Text("Add To Order")
                     .font(.title)
+                    .foregroundColor(.black)
             }
             .padding(12)
             .frame(maxWidth: .infinity)
             .accentColor(Color.white)
-            .background(Color.blue)
-            .cornerRadius(180)
+            .background(Color.yellow)
+            .cornerRadius(12)
         }
         .padding(12)
-        .navigationBarTitle(self.menuItem.itemName)
-    }
+
+        .navigationBarTitle(self.menuItem.itemName)    }
 }
 
 struct MenuItemView_Previews: PreviewProvider {
@@ -69,7 +77,8 @@ struct MenuItemView_Previews: PreviewProvider {
                 itemPicture: "https://photos.bigoven.com/recipe/hero/spinach-grape-tomato-cheddar-f-e9717c.jpg?h=500&w=500",
                 itemName: "Example Item",
                 itemCost: 1.99,
-                itemDescription: "Example Description"))
+                itemDescription: "Example Description",
+                isHighlighted: true))
         }
         .environment(\.colorScheme, .dark)
     }

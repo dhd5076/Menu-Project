@@ -11,7 +11,6 @@
 		9AD88F352464F90E00FCA152 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD88F342464F90E00FCA152 /* SceneDelegate.swift */; };
 		9AD88F382464F90E00FCA152 /* Restaurant_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9AD88F362464F90E00FCA152 /* Restaurant_App.xcdatamodeld */; };
 		9AD88F3A2464F90E00FCA152 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD88F392464F90E00FCA152 /* ContentView.swift */; };
-		9AD88F3C2464F91100FCA152 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD88F3B2464F91100FCA152 /* Assets.xcassets */; };
 		9AD88F3F2464F91100FCA152 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD88F3E2464F91100FCA152 /* Preview Assets.xcassets */; };
 		9AD88F422464F91100FCA152 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD88F402464F91100FCA152 /* LaunchScreen.storyboard */; };
 		9AD88F4A2464FA5000FCA152 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD88F492464FA5000FCA152 /* MenuView.swift */; };
@@ -22,21 +21,24 @@
 		9AD88F572465049E00FCA152 /* EntreesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD88F562465049E00FCA152 /* EntreesView.swift */; };
 		9AD88F592465056000FCA152 /* MenuItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD88F582465056000FCA152 /* MenuItemListView.swift */; };
 		9AD88F5B24650A9C00FCA152 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD88F5A24650A9B00FCA152 /* Order.swift */; };
+		9ADB6101246A45180079F0BD /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADB6100246A45180079F0BD /* InfoView.swift */; };
 		9ADFA23A2465178400AD4ED7 /* OrderItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFA2392465178400AD4ED7 /* OrderItemView.swift */; };
 		9ADFA23E2465192D00AD4ED7 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFA23D2465192D00AD4ED7 /* MenuItem.swift */; };
 		9ADFA2402465229F00AD4ED7 /* SidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFA23F2465229F00AD4ED7 /* SidesView.swift */; };
 		9ADFA242246522AA00AD4ED7 /* DessertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFA241246522AA00AD4ED7 /* DessertsView.swift */; };
 		9ADFA244246522B400AD4ED7 /* BeveragesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFA243246522B400AD4ED7 /* BeveragesView.swift */; };
 		9ADFA2462465232C00AD4ED7 /* SaladsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFA2452465232C00AD4ED7 /* SaladsView.swift */; };
+		9AFB5897246A1D1A0062C857 /* OrderPreparationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB5896246A1D1A0062C857 /* OrderPreparationView.swift */; };
+		9AFB5899246A26D50062C857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AFB5898246A26D50062C857 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9AD88F2F2464F90E00FCA152 /* Restaurant App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Restaurant App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AA005042468DF0A0015D8A5 /* Restaurant App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Restaurant App.entitlements"; sourceTree = "<group>"; };
+		9AD88F2F2464F90E00FCA152 /* Trofi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trofi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD88F322464F90E00FCA152 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AD88F342464F90E00FCA152 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9AD88F372464F90E00FCA152 /* Restaurant_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Restaurant_App.xcdatamodel; sourceTree = "<group>"; };
 		9AD88F392464F90E00FCA152 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		9AD88F3B2464F91100FCA152 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AD88F3E2464F91100FCA152 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9AD88F412464F91100FCA152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AD88F432464F91100FCA152 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,12 +49,15 @@
 		9AD88F562465049E00FCA152 /* EntreesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntreesView.swift; sourceTree = "<group>"; };
 		9AD88F582465056000FCA152 /* MenuItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemListView.swift; sourceTree = "<group>"; };
 		9AD88F5A24650A9B00FCA152 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		9ADB6100246A45180079F0BD /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		9ADFA2392465178400AD4ED7 /* OrderItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItemView.swift; sourceTree = "<group>"; };
 		9ADFA23D2465192D00AD4ED7 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		9ADFA23F2465229F00AD4ED7 /* SidesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidesView.swift; sourceTree = "<group>"; };
 		9ADFA241246522AA00AD4ED7 /* DessertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertsView.swift; sourceTree = "<group>"; };
 		9ADFA243246522B400AD4ED7 /* BeveragesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeveragesView.swift; sourceTree = "<group>"; };
 		9ADFA2452465232C00AD4ED7 /* SaladsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaladsView.swift; sourceTree = "<group>"; };
+		9AFB5896246A1D1A0062C857 /* OrderPreparationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPreparationView.swift; sourceTree = "<group>"; };
+		9AFB5898246A26D50062C857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +83,7 @@
 		9AD88F302464F90E00FCA152 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9AD88F2F2464F90E00FCA152 /* Restaurant App.app */,
+				9AD88F2F2464F90E00FCA152 /* Trofi.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,12 +91,14 @@
 		9AD88F312464F90E00FCA152 /* Restaurant App */ = {
 			isa = PBXGroup;
 			children = (
+				9AA005042468DF0A0015D8A5 /* Restaurant App.entitlements */,
 				9AD88F5E24650AD400FCA152 /* Order */,
 				9AD88F512464FE8B00FCA152 /* Menu */,
 				9AD88F322464F90E00FCA152 /* AppDelegate.swift */,
 				9AD88F342464F90E00FCA152 /* SceneDelegate.swift */,
 				9AD88F392464F90E00FCA152 /* ContentView.swift */,
-				9AD88F3B2464F91100FCA152 /* Assets.xcassets */,
+				9ADB6100246A45180079F0BD /* InfoView.swift */,
+				9AFB5898246A26D50062C857 /* Assets.xcassets */,
 				9AD88F402464F91100FCA152 /* LaunchScreen.storyboard */,
 				9AD88F432464F91100FCA152 /* Info.plist */,
 				9AD88F362464F90E00FCA152 /* Restaurant_App.xcdatamodeld */,
@@ -131,6 +138,7 @@
 				9AD88F4B2464FA5E00FCA152 /* OrderView.swift */,
 				9ADFA2392465178400AD4ED7 /* OrderItemView.swift */,
 				9AD88F5A24650A9B00FCA152 /* Order.swift */,
+				9AFB5896246A1D1A0062C857 /* OrderPreparationView.swift */,
 			);
 			name = Order;
 			sourceTree = "<group>";
@@ -155,7 +163,7 @@
 				9AD88F542465017600FCA152 /* URLImage */,
 			);
 			productName = "Restaurant App";
-			productReference = 9AD88F2F2464F90E00FCA152 /* Restaurant App.app */;
+			productReference = 9AD88F2F2464F90E00FCA152 /* Trofi.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -200,8 +208,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AD88F422464F91100FCA152 /* LaunchScreen.storyboard in Resources */,
+				9AFB5899246A26D50062C857 /* Assets.xcassets in Resources */,
 				9AD88F3F2464F91100FCA152 /* Preview Assets.xcassets in Resources */,
-				9AD88F3C2464F91100FCA152 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +226,7 @@
 				9AD88F332464F90E00FCA152 /* AppDelegate.swift in Sources */,
 				9AD88F4C2464FA5E00FCA152 /* OrderView.swift in Sources */,
 				9ADFA23E2465192D00AD4ED7 /* MenuItem.swift in Sources */,
+				9ADB6101246A45180079F0BD /* InfoView.swift in Sources */,
 				9ADFA23A2465178400AD4ED7 /* OrderItemView.swift in Sources */,
 				9AD88F5B24650A9C00FCA152 /* Order.swift in Sources */,
 				9AD88F502464FE2600FCA152 /* MenuItemView.swift in Sources */,
@@ -229,6 +238,7 @@
 				9ADFA244246522B400AD4ED7 /* BeveragesView.swift in Sources */,
 				9AD88F352464F90E00FCA152 /* SceneDelegate.swift in Sources */,
 				9ADFA2402465229F00AD4ED7 /* SidesView.swift in Sources */,
+				9AFB5897246A1D1A0062C857 /* OrderPreparationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +374,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Restaurant App/Restaurant App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Restaurant App/Preview Content\"";
 				DEVELOPMENT_TEAM = 483KLC6N9W;
@@ -374,7 +385,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dylandunn.Restaurant-App";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Trofi;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -384,6 +396,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Restaurant App/Restaurant App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Restaurant App/Preview Content\"";
 				DEVELOPMENT_TEAM = 483KLC6N9W;
@@ -394,7 +407,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dylandunn.Restaurant-App";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Trofi;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

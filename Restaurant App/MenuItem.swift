@@ -12,6 +12,7 @@ struct MenuItem : Identifiable {
     public var itemPicture : String
     public var itemName : String
     public var itemCost : Float
-    public let itemDescription : String
+    public var itemDescription : String
+    public var isHighlighted : Bool
     public var id = UUID()
 }

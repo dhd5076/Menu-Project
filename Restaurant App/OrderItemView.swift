@@ -22,15 +22,22 @@ struct OrderItemView: View {
                 .frame(width: 64, height: 64)
                 .cornerRadius(12)
                 Text(self.menuItem.itemName)
+                .font(.subheadline)
             }
             Spacer()
             Text("$\(String(format: "%.2f", self.menuItem.itemCost))")
+            .font(.headline)
         }
     }
 }
 
 struct OrderItemView_Previews: PreviewProvider {
     static var previews: some View {
-        OrderItemView(menuItem: MenuItem(itemPicture: "Item", itemName: "Example Item", itemCost: 1.99, itemDescription: "Example Description"))
+        OrderItemView(menuItem: MenuItem(
+            itemPicture: "Item",
+            itemName: "Example Item",
+            itemCost: 1.99,
+            itemDescription: "Example Description",
+            isHighlighted: false))
     }
 }

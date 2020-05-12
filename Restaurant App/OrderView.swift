@@ -32,13 +32,14 @@ struct OrderView: View {
                         Text("Place Order")
                             .font(.title)
                             .padding(12)
+                            .foregroundColor(.black)
                     }
                     .frame(maxWidth: .infinity)
                     .accentColor(Color.white)
-                    .background(Color.blue)
-                    .cornerRadius(180)
-                    .alert(isPresented: $showingOrderConfirmation) {
-                        Alert(title: Text("Order Placed"), message: Text("Your Order Will Be Ready Shortly!"), dismissButton: .default(Text("Ok")))
+                    .background(Color.yellow)
+                    .cornerRadius(12)
+                    .sheet(isPresented: $showingOrderConfirmation) {
+                        OrderPreparationView(isShowing: self.$showingOrderConfirmation)
                     }
                 }
                 .padding(12)
@@ -57,9 +58,8 @@ struct OrderView: View {
 }
 
 struct OrderView_Previews: PreviewProvider {
-    public var order = Order()
     
     static var previews: some View {
-        OrderView()
+        OrderView().environmentObject(Order())
     }
 }

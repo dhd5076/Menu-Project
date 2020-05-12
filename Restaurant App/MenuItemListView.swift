@@ -21,7 +21,16 @@ struct MenuItemListView: View {
                 }
                 .frame(width: 64, height: 64)
                 .cornerRadius(12)
-                Text(self.menuItem.itemName)
+                HStack {
+                    Text(self.menuItem.itemName)
+                        .font(.subheadline)
+                    if(self.menuItem.isHighlighted) {
+                        Image(systemName: "star.fill")
+                            .resizable()
+                            .foregroundColor(.yellow)
+                            .frame(width: 16, height: 16)
+                    }
+                }
             }
         }
     }
@@ -35,7 +44,8 @@ struct ListItemView_Previews: PreviewProvider {
                     itemPicture: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/1599px-Good_Food_Display_-_NCI_Visuals_Online.jpg",
                     itemName: "Example Item",
                     itemCost: 1.99,
-                    itemDescription: "Example Description"))
+                    itemDescription: "Example Description",
+                    isHighlighted: true))
             }
         }
     }

@@ -13,14 +13,16 @@ struct DessertsView: View {
         List {
             MenuItemListView(menuItem: MenuItem(
                 itemPicture: "https://photos.bigoven.com/recipe/hero/brownies-e8d4e6.jpg?h=500&w=500",
-                itemName: "Melt Away Brownies",
-                itemCost: 4.99,
-                itemDescription: "Chewy, rich, chocolate brownies"))
+                itemName: "Melt Away Brownie",
+                itemCost: 2.99,
+                itemDescription: "Chewy, rich, chocolate brownies",
+                isHighlighted: true))
             MenuItemListView(menuItem: MenuItem(
                 itemPicture: "https://photos.bigoven.com/recipe/hero/chocolate-chip-oatmeal-cookies-3.jpg?h=500&w=500",
-                itemName: "Oatmeal Cookies",
-                itemCost: 4.99,
-                itemDescription: "Chewy, nostalgia inducing oatmeal cookies "))
+                itemName: "Oatmeal Cookie",
+                itemCost: 2.99,
+                itemDescription: "Chewy, nostalgia inducing oatmeal cookies ",
+                isHighlighted: false))
         }
         .navigationBarTitle("Desserts")
     }
